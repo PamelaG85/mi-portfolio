@@ -54,7 +54,9 @@ Para esta entrega hice bastantes modificaciones e intenté cumplir con todos los
 
 Creo que es todo, aunque sigue siendo un "work in progress", debo seguir trabajando para que quede al 100%.
 
-¡Espero que le guste profe!
+¡Espero que le guste!
+
+El portfolio se encuentra deployado: [Mi Portfolio] (https://pamelag85.github.io/mi-portfolio/)
 
 Le dejo una muestra de las secciones:
 
