@@ -1,0 +1,722 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+div p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+div > p {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/*ESTILOS PARA LA SECCIÓN HOME*/
+/*Generales*/
+#home {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;   
+    color: black;
+    text-align: center;
+    height: 100vh;
+}
+
+/*Estilos para el lado izquierdo*/
+.left-side {
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgNombre {
+    width: 75%;
+    height: auto;
+    margin-top: auto;
+}
+
+.left-side h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #442d99;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+/*Estilos para el lado derecho*/
+.right-side {
+    display: flex;
+    flex-direction:column-reverse;
+    flex: 1;
+    justify-content: space-between;
+    background-image: url('../assets/images/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 100%;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.avatar-container img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 100%;
+    border-color: white;
+    border-style: dotted;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.right-side a {    
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+.right-side a i:hover {
+    animation: bounce 1s infinite;
+}
+
+/* animación efecto rebote para los íconos de linkedin y github*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/*ESTILOS PARA LA SECCIÓN SOBRE MÍ*/
+/*General*/
+#sobre-mi {
+    background-color: #605796;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0.5rem 10%;   
+    text-align: center;
+}
+
+.sobre-mi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 90%;
+}
+
+h2 {
+    padding: 50px 50px;
+}
+
+.sobre-mi-img img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    border-color: white;
+    border-style: dotted;
+}
+
+.iconos-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+
+}
+
+.iconos-tecnologias i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconos-tecnologias i:hover {
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-in-out;
+    cursor: default;
+}
+
+.sobre-mi-text {
+    max-width: 75%;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-bottom: 50px;
+}
+
+.sobre-mi-text p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#sobre-mi div p {
+    color: #ffffff;
+    margin: 10px 25px;
+}
+
+.intro-par {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    margin: 0;
+    text-align: center;
+}
+
+/*Estilos para la tabla*/
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 4px solid;
+    overflow: hidden;
+    width: 94%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c8c2f0;
+}
+
+thead th {
+    border-bottom: 3px solid #c8c2f0;
+    border-radius: 15px 15px 0 0;
+    background-color: #442d99;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos para las celdas */
+tbody td {
+    border: 3px solid #c8c2f0;
+    border-bottom: 3px solid #c8c2f0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    width: 33.33%;
+}
+
+/* Filas pares */
+tr:nth-child(even) {
+    background-color: #7362b3;
+}
+
+/* Filas impares */
+tr:nth-child(odd) {
+    background-color: #a094ca;
+}
+
+/* Efecto hover para celdas */
+tbody td:hover {
+    background-color: #d0cae6;
+    cursor: pointer;
+}
+
+/*ESTILOS PARA LA SECCIÓN CONTACTO*/
+/*General*/
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 128, 157);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+/* Estilo para el formulario */
+form {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    border: 4px solid white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#contacto form > label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Estilo para los campos de entrada (input, textarea) */
+form input, form textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 2px solid white;
+    background-color: rgba(240, 208, 218, 0.308);
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+/*Efecto hover para los inputs*/
+form input:hover {
+    background-color: #442d99;
+}
+
+/* Estilo para el botón de enviar */
+form button {
+    width: 150px; 
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    background-color: #442d99;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para el botón */
+form button:hover {
+    background-color: fuchsia;
+}
+
+/* Ajustes para los inputs y textarea */
+form input::placeholder, form textarea::placeholder {
+    color: #e0e0e0;
+    opacity: 0.7;
+}
+
+/*ESTILOS PARA LA TABLA DE NAVEGACIÓN*/
+.nav-bar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;    
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin: 10px 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover */
+.nav-bar a:hover {
+     color: fuchsia;
+     transform: scale(1.5);
+     background-color: white;
+     border-radius: 10px 0 0 10px;
+    
+}
+
+/*RESPONSIVIDAD*/
+/*Tablet horizontal*/
+@media (max-width: 1080px) {
+    .nav-bar { /*la barra de navegación vertical lateral, pasa a ser horizontal y a estar arriba*/
+        background-color: #442d99;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        padding: 5px 0;
+        margin-top: 30px;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar li {
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-bar a:hover {
+        background-color: #442d99;
+        transform: scale(1);
+        border-radius: 0 0 0 0;
+    }
+
+    #home {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .imgNombre {
+        width: 400px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .left-side h1 {
+        margin-bottom: 5px;
+    }
+
+    
+    .social-links {
+        flex-direction: column;
+        align-self: flex-start;
+        position: absolute;
+    }
+
+    #sobre-mi h2 {
+        margin-top: 55px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-mi-img img {
+        width: 170px;
+        margin-top: 300px;
+    }
+
+    .iconos-tecnologias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iconos-tecnologias i {
+        font-size: 2rem;
+    }
+
+    #sobre-mi .intro-par {
+        width: 108%;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    
+    #sobre-mi table {
+        width: 108%;
+        margin-top: 10px;
+    }
+
+    #contacto {
+        height: auto;
+    }
+
+    #contacto h2 {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+   
+    .contacto-img img {
+        width: 170px;
+    }
+
+    #contacto form {
+        width: 80%;
+        margin-top: 50px;
+     }    
+}
+
+/*Tablet vertical*/
+@media (max-width: 768px) {
+    .nav-bar {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .imgNombre {
+        width: 400px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #sobre-mi h2 {
+        padding: 25px 25px;
+    }
+
+    #sobre-mi .intro-par {
+        width: 107%;
+    }
+
+    #sobre-mi .intro-par {
+       font-size: 14px;
+    }
+
+    .sobre-mi-img img {
+        margin-top: 210px;
+        width: 130px;
+        margin-right: 40px;
+    }
+
+    .iconos-tecnologias {
+        width: 60%;
+        align-items: center;
+    }
+
+    .iconos-tecnologias i {
+        font-size: 1.75rem;
+        margin: 5px;
+    }
+
+    #contacto h2 {
+        padding-top: 50px;
+    }
+
+    .contacto-img img {
+        width: 130px;
+        margin-right: 40px;
+    }
+
+    #contacto form {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+/*Móvil 1*/
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 45px;
+    }
+    
+    .left-side, .right-side {
+        padding: 10px;
+    }
+
+    .imgNombre {
+        margin-top: 50px;
+        width: 350px;
+    }
+
+    .imgAvatar {
+        width: 200px;
+    }
+
+    .social-links {
+        gap: 0;
+    }
+
+    .social-links a {
+        font-size: 30px;
+    }
+
+    .sobre-mi-img img, .contacto-img img {
+        display: none;
+    }
+
+    .iconos-tecnologias {
+        margin-top: 200px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+        align-items: center;
+    }
+
+    .iconos-tecnologias i {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .intro-par {
+        align-content: center;
+        width: 100%;
+    }
+    
+    tbody td {
+        font-size: 14px;
+    }
+
+    #contacto form {
+        padding: 10px;
+        width: 95%;
+        align-content: center;
+    }
+
+    #contacto form > label {
+        font-size: 1.1rem;
+    }
+
+    form input, form textarea {
+        width: 90%; 
+    }
+
+    form button {
+        margin-bottom: 20px; 
+    }
+}
+
+/*Móvil 2*/
+@media (max-width: 376px) {
+
+    #home h1 {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
+    .left-side, .right-side {
+        padding: 5px;
+    }
+
+    .imgNombre {
+        width: 300px;
+    }
+
+    .social-links a {
+        font-size: 2rem;
+    }
+
+    .imgAvatar {
+        width: 150px;
+        height: auto;
+    }
+
+    .iconos-tecnologias {
+        margin-top: 200px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+        align-items: center;
+    }
+
+    .iconos-tecnologias i {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    #contacto h2 {
+        padding-top: 0;
+        margin-top: 50px;
+    }
+
+    .intro-par {
+        align-content: center;
+        width: 100%;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    tbody td {
+        font-size: 12px;
+        padding: 10px 5px 10px 5px;
+    }
+
+   #contacto form {
+        padding: 5px;
+        width: 98%;
+        margin-bottom: 80px;
+    }
+
+    #contacto form > label {
+        font-size: 1rem;
+    }
+
+    form button {
+        width: 120px;
+    }
+}

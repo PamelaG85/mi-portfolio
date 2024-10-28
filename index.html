@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio: Pamela Gómez</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+<body>
+    <!--Puse una barra de navegación lateral que, valga la redundancia, nos ayudará a navegar por las distintas secciones-->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!-- Acá están las 3 secciones, cada una con su ID -->
+    <section id="home"> <!--esta sección está dividida en 2, un lado izquierdo donde está mi nombre y el derecho donde está la imagen y el link-->
+        <div class="left-side">
+            <img src="assets/images/logoNombre.png" alt="Pamela Gómez" class="imgNombre">
+            <h1>¡Bienvenidos a mi portfolio!</h1>
+        </div>
+        <div class="right-side">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pamelaagomez" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/PamelaG85" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="avatar-container">
+                <img src="assets/images/homero.jpg" class="imgAvatar">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-img">
+                <img src="assets/images/homeroanteojos.png" alt="Homero pensando">
+                <div class="iconos-tecnologias">
+                    <i class="fas fa-database"></i>                    
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-java"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fas fa-code"></i>
+                  </div>
+            </div>
+            <div class="sobre-mi-text">
+                <h2>Sobre Mí</h2>
+                <p class="intro-par">
+                    Mi interés por la programación surgió hace muchos años, cuando tuve acceso a mi primer computadora.  
+                    Siempre me ha gustado investigar y experimentar, lo que me llevó a iniciar 
+                    la carrera de Analista de Sistemas en la UBA.  Sin embargo, por motivos personales, no pude finalizarla.  
+                    Posteriormente, estudié Abogacía en la UAI, me recibí y ejercí la profesión durante un largo tiempo.
+                </p>
+                <p class="intro-par">
+                    Después de muchos años, decidí volver a mi verdadera pasión: la programación.  Comencé 
+                    con algunos cursos en la UTN y Argentina Programa y #YoProgramo 4.0, dictados por el INTI.
+                    Más tarde, se presentó la oportunidad de inscribirme en la Tecnicatura en Desarrollo de Software del IFTS N° 29, 
+                    la cual me encuentro cursando actualmente y mediante la que he adquirido nuevos conocimientos, habilidades 
+                    y herramientas que me han permitido desarrollar mi potencial.
+                </p>    
+                <p class="intro-par">
+                    Gracias a este recorrido, logré dar un salto importante en mi vida profesional. Actualmente, me desempeño
+                    como desarrolladora backend en una empresa de desarrollo software, donde puedo aplicar muchos de los 
+                    conocimientos adquiridos y continuar aprendiendo.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Tecnologías que conozco</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SmallTalk</td>
+                            <td>SQL</td>
+                            <td>C#</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                            <td>JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>JAVA</td>
+                            <td>GitHub</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="contacto-container">
+            <form>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" placeholder="Cosme Fulanito" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="cosmefulanito@gmail.com" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="telefono" id="telefono" placeholder="1123456789" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </form>
+        </div>    
+    </section>
+</body>
+</html>
