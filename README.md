@@ -56,7 +56,7 @@ Creo que es todo, aunque sigue siendo un "work in progress", debo seguir trabaja
 
 ¡Espero que le guste!
 
-El portfolio se encuentra deployado: [Mi Portfolio] (https://pamelag85.github.io/mi-portfolio/)
+El portfolio se encuentra deployado: [Mi Portfolio](https://pamelag85.github.io/mi-portfolio/)
 
 Le dejo una muestra de las secciones:
 
